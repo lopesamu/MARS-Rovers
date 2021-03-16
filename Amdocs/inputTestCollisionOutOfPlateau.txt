@@ -1,0 +1,7 @@
+7 6
+4 1 N
+MMM
+2 4 E
+MMMMRM
+1 4 N
+MRMLMM
