@@ -8,6 +8,7 @@
  */
 
 package Output;
+
 import java.util.ArrayList;
 
 import Vehicle.Rover;
@@ -19,14 +20,15 @@ public class Output {
 		this.squad = squad;
 	}
 
-	//print final result
+	// print final result
 	public void printFinalResult() {
-		for(Rover rover : this.squad) {
-			System.out.println(rover.getFinalPosition().getX() + " " + rover.getFinalPosition().getY() + " " + rover.getFinalDirection());
+		for (Rover rover : this.squad) {
+			System.out.println(rover.getFinalPosition().getX() + " " + rover.getFinalPosition().getY() + " "
+					+ rover.getFinalDirection());
 		}
 	}
 
 	public ArrayList<Rover> getR() {
 		return squad;
-	}	
+	}
 }

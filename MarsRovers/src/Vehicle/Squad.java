@@ -16,12 +16,12 @@ public class Squad {
 	private ArrayList<Rover> rovers = new ArrayList<>();
 	private Plateau plateau;
 
-	//create the squad
-	public Squad(Plateau plateau){
+	// create the squad
+	public Squad(Plateau plateau) {
 		this.plateau = plateau;
 	}
 
-	//add a rover to the squad
+	// add a rover to the squad
 	public void addRover(Rover rover) {
 		rovers.add(rover);
 	}
