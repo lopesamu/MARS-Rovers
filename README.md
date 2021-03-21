@@ -1,6 +1,6 @@
 # MARS Rovers
 
-## Problem Description
+## 1. Problem Description
 A squad of robotic rovers are to be landed by NASA on a plateau on Mars. This plateau, which is curiously rectangular, must be navigated by the rovers so that their on-board cameras can get a complete view of the surrounding terrain to send back to Earth.
 
 A rover’s position and location is represented by a combination of x and y co-ordinates and a letter representing one of the four cardinal compass points. The plateau is divided up into a grid to simplify navigation. An example position might be 0, 0, N, which means the rover is in the bottom left corner and facing North.
@@ -9,7 +9,7 @@ In order to control a rover, NASA sends a simple string of letters. The possible
 
 Assume that the square directly North from (x, y) is (x, y+1).
 
-## Input
+## 2. Input
 The first line of input is the upper-right coordinates of the plateau, the lower-left coordinates are assumed to be 0,0.
 
 The rest of the input is information pertaining to the rovers that have been deployed. Each rover has two lines of input. The first line gives the rover’s position, and the second line is a series of instructions telling the rover how to explore the plateau.
@@ -18,12 +18,12 @@ The position is made up of two integers and a letter separated by spaces, corres
 
 Each rover will be finished sequentially, which means that the second rover won’t start to move until the first one has finished moving.
 
-## Output
+## 3. Output
 The output for each rover should be its final co-ordinates and heading.
 
-## Input and Output
+## 4. Input and Output
 
-### Input Test
+### 4.1. Input Test
 
 5 5
 
@@ -31,12 +31,12 @@ The output for each rover should be its final co-ordinates and heading.
 
 LMLMLMLMM
 
-### Output Expected
+### 4.2. Output Expected
 
 1 3 N
 
 5 1 E
 
-## Solution Description
+## 5. Solution Description
 
-The solution description is [here](Solution_Description.pdf)
+The solution description is [here](Solution_Description.pdf).
