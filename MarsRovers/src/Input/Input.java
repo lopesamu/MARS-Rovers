@@ -18,30 +18,33 @@ public class Input {
 
 	// each item of 'inputData' represents lines of the input file
 	private ArrayList<String> inputData = new ArrayList<>();
+
 	// 'path' is the path of the input file
 	private String path;
+	
+	// 'arq' is the file that is going to be open
+	private FileReader arq;
 
-	public Input(String path) {
+	public Input(String path) throws IOException {
 		this.path = path;
 
 		// read the input file .txt
 		try {
-			FileReader arq = new FileReader(this.path);
+			arq = new FileReader(this.path);
 			BufferedReader readFile = new BufferedReader(arq);
 
 			String line = readFile.readLine();
 			this.inputData.add(line); // read first line
 
 			do {
-
 				line = readFile.readLine(); // read from the second to the last line
 				this.inputData.add(line);
 			} while (line != null);
-
-			arq.close();
 		} catch (IOException e) {
 			System.err.printf("Error. Cannot open the file: %s.\n", e.getMessage());
-
+		}
+		finally {
+			arq.close();
 		}
 	}
 
